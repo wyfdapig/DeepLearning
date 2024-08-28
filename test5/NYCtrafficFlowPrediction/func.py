@@ -39,15 +39,6 @@ def drawPlot(heights, fname, ylabel):
     plt.savefig("images/{}".format(fname))
     plt.show()
 
-# def mape(y_true, y_pred):
-#     y_true, y_pred = np.array(y_true), np.array(y_pred)
-#     non_zero_index = (y_true > 0)
-#     y_true = y_true[non_zero_index]
-#     y_pred = y_pred[non_zero_index]
-
-#     mape = np.abs((y_true - y_pred) / y_true)
-#     mape[np.isinf(mape)] = 0
-#     return np.mean(mape) * 100
 
 def nextBatch(data,batch_size):
     """
